@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Assignment2</string>
+    <string name="BackSpace">\uf55a</string>
+    <string name="divideIcon">\uf529</string>
+    <string name="multiplyIcon">\uf00d</string>
+    <string name="minusIcon">\uf068</string>
+    <string name="plusIcon">\u002b</string>
+    <string name="plusMinusIcon">\ue43c</string>
+    <string name="percentIcon">\u0025</string>
+    <string name="SquareRootIcon">\u221A</string>
+    <string name="CubeRootIcon">\u221B</string>
+    <string name="piIcon">\u03C0</string>
+    <string name="equalIcon">\u003d</string>
+    <string name="clearIcon">\u0043</string>
+    <string name="backIcon">\uf55a</string>
+    <string name="dotIcon">\u002e</string>
+    <string name="sun">\uf185</string>
+    <string name="moon">\uf186</string>
+</resources>

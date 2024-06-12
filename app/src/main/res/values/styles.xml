@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--    Potrait Button styles-->
+    <style name="AllButtonsStyles" parent="Widget.Material3.Button">
+        <item name="android:layout_width">@dimen/ButtonWidth</item>
+        <item name="android:layout_height">@dimen/ButtonHeight</item>
+        <item name="android:layout_marginStart">@dimen/ButtonMargin</item>
+        <item name="android:layout_marginEnd">@dimen/ButtonMargin</item>
+        <item name="android:paddingStart">@dimen/ButtonTextPadding</item>
+        <item name="android:paddingEnd">@dimen/ButtonTextPadding</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/ButtonTextSize</item>
+        <item name="cornerRadius">@dimen/ButtonsCornerRadius</item>
+    </style>
+    <style name="NumberButton" parent="AllButtonsStyles">
+        <item name="android:backgroundTint">@color/AliceBlue</item>
+        <item name="android:textColor">@color/OxfordBlue</item>
+        <item name="android:textSize">@dimen/NumberButtonTextSize</item>
+    </style>
+    <style name="OperatorButton" parent="AllButtonsStyles">
+        <item name="android:backgroundTint">@color/OxfordBlue</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/fa_solid_900</item>
+    </style>
+    <style name="EqualsToButton" parent="AllButtonsStyles">
+        <item name="android:backgroundTint">@color/DarkOrange</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/fa_solid_900</item>
+    </style>
+
+<!--    landscape Buttons Styles-->
+    <style name="AllButtonsStyles_land" parent="Widget.Material3.Button">
+        <item name="android:layout_width">@dimen/ButtonWidth_land</item>
+        <item name="android:layout_height">@dimen/ButtonHeight_land</item>
+        <item name="android:layout_marginStart">@dimen/ButtonMargin</item>
+        <item name="android:layout_marginEnd">@dimen/ButtonMargin</item>
+        <item name="android:paddingStart">@dimen/ButtonTextPadding_land</item>
+        <item name="android:paddingEnd">@dimen/ButtonTextPadding_land</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/ButtonTextSize_land</item>
+        <item name="cornerRadius">@dimen/ButtonsCornerRadius_land</item>
+    </style>
+    <style name="NumberButton_land" parent="AllButtonsStyles_land">
+        <item name="android:backgroundTint">@color/AliceBlue</item>
+        <item name="android:textColor">@color/OxfordBlue</item>
+        <item name="android:textSize">@dimen/NumberButtonTextSize_land</item>
+    </style>
+    <style name="OperatorButton_land" parent="AllButtonsStyles_land">
+        <item name="android:backgroundTint">@color/OxfordBlue</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/fa_solid_900</item>
+    </style>
+    <style name="EqualsToButton_land" parent="AllButtonsStyles_land">
+        <item name="android:backgroundTint">@color/DarkOrange</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/fa_solid_900</item>
+    </style>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ModeChangeButtonSize">60sp</dimen>
+    <dimen name="ModeChangeButtonSize_land">30dp</dimen>
+    <dimen name="ButtonHeight">70dp</dimen>
+    <dimen name="ButtonsCornerRadius">12dp</dimen>
+    <dimen name="ButtonWidth">15dp</dimen>
+    <dimen name="ButtonMargin">15dp</dimen>
+    <dimen name="ButtonTextSize">30sp</dimen>
+    <dimen name="NumberButtonTextSize">38sp</dimen>
+    <dimen name="ButtonTextPadding">3dp</dimen>
+    <dimen name="ButtonHeight_land">50dp</dimen>
+    <dimen name="ButtonsCornerRadius_land">10dp</dimen>
+    <dimen name="ButtonWidth_land">10dp</dimen>
+    <dimen name="ButtonMargin_land">15dp</dimen>
+    <dimen name="ButtonTextSize_land">20sp</dimen>
+    <dimen name="NumberButtonTextSize_land">25sp</dimen>
+    <dimen name="ButtonTextPadding_land">3dp</dimen>
+    <dimen name="TextViewPadding">20dp</dimen>
+    <dimen name="ResultTextSize">70sp</dimen>
+    <dimen name="CalculationTextSize">30sp</dimen>
+    <dimen name="ResultTextSize_land">50sp</dimen>
+    <dimen name="CalculationTextSize_land">25sp</dimen>
+    <dimen name="switch_x_padding">150dp</dimen>
+    <dimen name="switch_x_padding_land">450dp</dimen>
+    <dimen name="switch_y_margin">100dp</dimen>
+    <dimen name="switch_y_margin_land">20dp</dimen>
+    <dimen name="RowMargin">35dp</dimen>
+    <dimen name="RowMargin_land">10dp</dimen>
+    <dimen name="ResultTextViewMargin">35dp</dimen>
+    <dimen name="ResultTextViewMargin_land">15dp</dimen>
+</resources>

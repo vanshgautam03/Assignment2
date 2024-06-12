@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="OxfordBlue">#091E32</color>
+    <color name="CelesteBlue">#B8F6FF</color>
+    <color name="Orange">#F59E0B</color>
+    <color name="DarkOrange">#FF8C00</color>
+    <color name="AliceBlue">#CAF0F8</color>
+    <color name="DarkAliceBlue">#81E0F3</color>
+    <color name="LightAliceBlue">#E6F7FF</color>
+</resources>

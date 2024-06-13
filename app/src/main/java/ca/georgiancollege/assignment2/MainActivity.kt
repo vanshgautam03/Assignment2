@@ -59,9 +59,8 @@ class MainActivity : AppCompatActivity() {
                 binding.CalculationsView.setTextColor(Color.BLACK)
                 binding.Result.setTextColor(Color.BLACK)
             }
-            val x = 5
-            val square = (x*x).sign
-            Log.i("Square", square.toString())
         }
+        val calculation = Calculation(binding);
+
     }
 }

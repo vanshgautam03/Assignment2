@@ -16,4 +16,5 @@
     <string name="dotIcon">\u002e</string>
     <string name="sun">\uf185</string>
     <string name="moon">\uf186</string>
+    <string name="equalsTo">=</string>
 </resources>

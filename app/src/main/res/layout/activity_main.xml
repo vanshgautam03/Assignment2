@@ -20,7 +20,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.06999999"
+        app:layout_constraintVertical_bias="0.050000002"
         app:layout_goneMarginStart="0dp">
 
         <com.google.android.material.switchmaterial.SwitchMaterial
@@ -62,22 +62,40 @@
                 android:textStyle="bold"
                 tools:ignore="RtlCompat" />
 
-            <TextView
-                android:id="@+id/Result"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:includeFontPadding="true"
-                android:paddingStart="@dimen/TextViewPadding"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-                android:paddingEnd="@dimen/TextViewPadding"
-                android:paddingBottom="@dimen/TextViewPadding"
-                android:text="= 0"
-                android:textAlignment="textEnd"
-                android:textColor="@color/OxfordBlue"
-                android:textSize="@dimen/ResultTextSize"
-                android:textStyle="bold"
-                tools:ignore="RtlCompat" />
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/TextViewPadding"
+                    android:text="@string/equalsTo"
+                    android:textColor="@color/OxfordBlue"
+                    android:textSize="@dimen/ResultTextSize"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Result"
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:includeFontPadding="true"
+                    android:paddingStart="@dimen/TextViewPadding"
+
+                    android:paddingEnd="@dimen/TextViewPadding"
+                    android:paddingBottom="@dimen/TextViewPadding"
+                    android:text="0"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/OxfordBlue"
+                    android:textSize="@dimen/ResultTextSize"
+                    android:textStyle="bold"
+                    tools:ignore="RtlCompat" />
+            </LinearLayout>
+
         </LinearLayout>
 
     </LinearLayout>

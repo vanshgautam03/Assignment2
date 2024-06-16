@@ -142,13 +142,13 @@
             <Button
                 android:id="@+id/percent"
                 style="@style/OperatorButton"
-                android:tag="Percent"
+                android:tag="%"
                 android:text="@string/percentIcon" />
 
             <Button
                 android:id="@+id/Divide"
                 style="@style/OperatorButton"
-                android:tag="Divide"
+                android:tag="/"
                 android:text="@string/divideIcon" />
         </LinearLayout>
 
@@ -182,7 +182,7 @@
             <Button
                 android:id="@+id/Multiply"
                 style="@style/OperatorButton"
-                android:tag="Multiply"
+                android:tag="X"
                 android:text="X" />
         </LinearLayout>
 
@@ -216,7 +216,7 @@
             <Button
                 android:id="@+id/Minus"
                 style="@style/OperatorButton"
-                android:tag="Minus"
+                android:tag="-"
                 android:text="-" />
         </LinearLayout>
 
@@ -250,7 +250,7 @@
             <Button
                 android:id="@+id/Plus"
                 style="@style/OperatorButton"
-                android:tag="Plus"
+                android:tag="+"
                 android:text="+" />
         </LinearLayout>
 

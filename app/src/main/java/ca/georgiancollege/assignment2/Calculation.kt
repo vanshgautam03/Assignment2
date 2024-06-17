@@ -14,6 +14,10 @@ class Calculation (databinding: ActivityMainBinding){
     init {
         buttonsCall()
     }
+
+    /**
+     * Initializes the button click listeners for operands and symbols.
+     */
     private fun buttonsCall() {
         val operands = arrayOf(
             binding.Zero,
@@ -63,6 +67,12 @@ class Calculation (databinding: ActivityMainBinding){
         }
     }
 
+    /**
+     * Handles operand button clicks and updates the result TextView.
+     *
+     * @param numbersTag The tag of the button clicked, representing the operand.
+     */
+
     private fun numbersSharedHandler(numbersTag : String)
     {
         val calculationsTextView: TextView = binding.CalculationsView
@@ -91,6 +101,11 @@ class Calculation (databinding: ActivityMainBinding){
 
     }
 
+    /**
+     * Handles symbol button clicks and updates the calculations TextView and result TextView.
+     *
+     * @param symbolTag The tag of the button clicked, representing the symbol.
+     */
     private fun symbolsSharedHandler(symbolTag: String)
     {
         val calculationsTextView: TextView = binding.CalculationsView
@@ -288,6 +303,12 @@ class Calculation (databinding: ActivityMainBinding){
         }
     }
 
+    /**
+     * Calculates the result of the expression.
+     *
+     * @param calculations The expression to be calculated.
+     * @return The result of the expression.
+     */
     private fun calculate(calculations: String): Any {
         val operatorsPrecedence = mapOf('+' to 4, '-' to 4, 'X' to 3, '/' to 3, '%' to 2,'^' to 1)
         var result :Any = 0
@@ -339,45 +360,147 @@ class Calculation (databinding: ActivityMainBinding){
         return result
     }
 
+    /**
+     * Adds two numbers.
+     *
+     * @param firstNum The first number.
+     * @param secondNum The second number.
+     * @return The sum of the two numbers.
+     */
     private fun addition(firstNum: Double, secondNum: Double): Double {
         return firstNum + secondNum
     }
+
+    /**
+     * Subtracts two numbers.
+     *
+     * @param firstNum The first number.
+     * @param secondNum The second number.
+     * @return The difference of the two numbers.
+     */
     private fun subtraction(firstNum: Double, secondNum: Double): Double {
         return firstNum - secondNum
     }
+
+    /**
+     * Multiplies two numbers.
+     *
+     * @param firstNum The first number.
+     * @param secondNum The second number.
+     * @return The product of the two numbers.
+     */
     private fun multiplication(firstNum: Double, secondNum: Double): Double {
         return firstNum * secondNum
     }
+
+    /**
+     * Divides two numbers.
+     *
+     * @param firstNum The first number.
+     * @param secondNum The second number.
+     * @return The quotient of the two numbers.
+     */
     private fun division(firstNum: Double, secondNum: Double): Double {
         return firstNum / secondNum
     }
+
+    /**
+     * Calculates the percentage of two numbers.
+     *
+     * @param firstNum The first number.
+     * @param secondNum The second number.
+     * @return The percentage of the two numbers.
+     */
     private fun percentage(firstNum: Double, secondNum: Double): Double {
         return firstNum * (secondNum/ 100)
     }
+
+    /**
+     * Calculates the cube root of a number when it is decimal number.
+     *
+     * @param firstNum The number.
+     * @return The cube root of the number.
+     */
     private fun cubeRoot(firstNum: Double): Double {
         return cbrt(firstNum)
     }
+
+    /**
+     * Calculates the cube root of a number when it is integer number.
+     *
+     * @param firstNum The number.
+     * @return The cube root of the number.
+     */
     private fun cubeRoot(firstNum: Int): Int{
         return cbrt(firstNum.toDouble()).toInt()
     }
+
+    /**
+     * Calculates the square root of a number when it is decimal number.
+     *
+     * @param firstNum The number.
+     * @return The square root of the number.
+     */
     private fun squareRoot(firstNum: Double): Double {
         return sqrt(firstNum)
     }
+
+    /**
+     * Calculates the square root of a number when it is integer number.
+     *
+     * @param firstNum The number.
+     * @return The square root of the number.
+     */
     private fun squareRoot(firstNum: Int): Int{
         return sqrt(firstNum.toDouble()).toInt()
     }
+
+    /**
+     * Calculates the square of a number when it is decimal number.
+     *
+     * @param firstNum The number.
+     * @return The square of the number.
+     */
     private fun square(firstNum: Double): Double {
         return firstNum * firstNum
     }
+
+    /**
+     * Calculates the square of a number when it is integer number.
+     *
+     * @param firstNum The number.
+     * @return The square of the number.
+     */
     private fun square(firstNum: Int): Int{
         return firstNum * firstNum
     }
+
+    /**
+     * Calculates the cube of a number when it is decimal number.
+     *
+     * @param firstNum The number.
+     * @return The factorial of the number.
+     */
     private fun cube(firstNum: Double): Double {
         return firstNum * firstNum * firstNum
     }
+
+    /**
+     * Calculates the cube of a number when it is integer number.
+     *
+     * @param firstNum The number.
+     * @return The factorial of the number.
+     */
     private fun cube(firstNum: Int): Int{
         return firstNum * firstNum * firstNum
     }
+
+    /**
+     * Calculates the factorial of a number when it is decimal number.
+     *
+     * @param firstNum The number.
+     * @return The factorial of the number.
+     */
     private fun factorial(firstNum: Double): Double {
         var result = 1.0
         for (i in 1..firstNum.toInt()) {
@@ -385,6 +508,13 @@ class Calculation (databinding: ActivityMainBinding){
         }
         return result
     }
+
+    /**
+     * Calculates the factorial of a number when it is integer number.
+     *
+     * @param firstNum The number.
+     * @return The factorial of the number.
+     */
     private fun factorial(firstNum: Int): Int {
         var result = 1
         for (i in 1..firstNum.toInt()) {
@@ -392,6 +522,14 @@ class Calculation (databinding: ActivityMainBinding){
         }
         return result
     }
+
+    /**
+     * Calculates the power of two numbers when one is power of other.
+     *
+     * @param firstNum The first number.
+     * @param secondNum The second number.
+     * @return The power of the two numbers.
+     */
     private fun power(firstNum: Double, secondNum: Double): Double {
         return firstNum.pow(secondNum)
     }

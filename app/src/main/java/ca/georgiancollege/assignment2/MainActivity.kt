@@ -14,12 +14,11 @@ import ca.georgiancollege.assignment2.databinding.ActivityMainBinding
 import kotlin.math.sign
 
 /**
- * This is the main activity of the application: Assignment 1
+ * This is the main activity of the application: Assignment 2
  * Name = Vansh Kumar Gautam
  * Student ID = 200544016
  * Date = 2nd June, 2024
- * In this assignment I have created the layout and design of the calculator application. And Along with that i have also created the bonus feature of the application
- * by creating the landscape layout for my application.
+ * In this assignment I have created the Functioning of the calculator application.
  */
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -34,6 +33,11 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        /**
+         * This is the code for the bonus feature of the application. In this feature I have created the dark mode for the application.
+         * When the user clicks on the switch button the application will change its theme to dark mode.
+         */
         binding.ModeChange.setOnClickListener{
             if(binding.ModeChange.isChecked){
                 binding.main.setBackgroundResource(R.color.OxfordBlue)
@@ -60,6 +64,10 @@ class MainActivity : AppCompatActivity() {
                 binding.Result.setTextColor(Color.BLACK)
             }
         }
+
+        /**
+         * This is the code for the calculation of the expression. In this code I have created the object of the Calculation class and passed the binding object to it.
+         */
         val calculation = Calculation(binding);
 
     }

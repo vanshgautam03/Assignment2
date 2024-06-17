@@ -28,5 +28,5 @@
     <dimen name="RowMargin">35dp</dimen>
     <dimen name="RowMargin_land">10dp</dimen>
     <dimen name="ResultTextViewMargin">35dp</dimen>
-    <dimen name="ResultTextViewMargin_land">15dp</dimen>
+    <dimen name="ResultTextViewMargin_land">10dp</dimen>
 </resources>

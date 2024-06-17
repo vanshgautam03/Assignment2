@@ -53,28 +53,47 @@
                 android:gravity="bottom"
                 android:paddingStart="@dimen/TextViewPadding"
                 android:paddingEnd="@dimen/TextViewPadding"
-                android:text="130 X 90"
+                android:text="0"
                 android:textAlignment="textEnd"
                 android:textColor="@color/OxfordBlue"
                 android:textSize="@dimen/CalculationTextSize_land"
                 android:textStyle="bold"
                 tools:ignore="RtlCompat" />
 
-            <TextView
-                android:id="@+id/Result"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/ResultTextViewMargin_land"
-                android:gravity="center"
-                android:includeFontPadding="true"
-                android:paddingStart="@dimen/TextViewPadding"
-                android:paddingEnd="@dimen/TextViewPadding"
-                android:text="= 11790"
-                android:textAlignment="textEnd"
-                android:textColor="@color/OxfordBlue"
-                android:textSize="@dimen/ResultTextSize_land"
-                android:textStyle="bold"
-                tools:ignore="RtlCompat" />
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/ResultTextViewMargin_land"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/TextViewPadding"
+                    android:text=" ="
+                    android:textColor="@color/OxfordBlue"
+                    android:textSize="@dimen/ResultTextSize_land"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Result"
+                    android:layout_width="900dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/ResultTextViewMargin_land"
+                    android:gravity="center"
+                    android:includeFontPadding="true"
+                    android:paddingStart="@dimen/TextViewPadding"
+                    android:paddingEnd="@dimen/TextViewPadding"
+                    android:text="0"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/OxfordBlue"
+                    android:textSize="@dimen/ResultTextSize_land"
+                    android:textStyle="bold"
+                    tools:ignore="RtlCompat" />
+            </LinearLayout>
+
         </LinearLayout>
 
     </LinearLayout>
@@ -103,42 +122,49 @@
             android:layout_marginBottom="@dimen/RowMargin_land"
             android:orientation="horizontal"
             android:paddingStart="10dp"
-            android:paddingEnd="10dp"
-            android:paddingTop="@dimen/RowMargin_land">
+            android:paddingTop="@dimen/RowMargin_land"
+            android:paddingEnd="10dp">
 
             <Button
                 android:id="@+id/AllClear"
                 style="@style/OperatorButton_land"
+                android:tag="AllClear"
                 android:text="AC" />
 
             <Button
                 android:id="@+id/backspace"
                 style="@style/OperatorButton_land"
+                android:tag="Backspace"
                 android:text="@string/BackSpace" />
 
             <Button
                 android:id="@+id/PlusMinus"
                 style="@style/OperatorButton_land"
+                android:tag="PlusMinus"
                 android:text="@string/plusMinusIcon" />
 
             <Button
                 android:id="@+id/divide"
                 style="@style/OperatorButton_land"
+                android:tag="/"
                 android:text="@string/divideIcon" />
 
             <Button
                 android:id="@+id/Seven"
                 style="@style/NumberButton_land"
+                android:tag="7"
                 android:text="7" />
 
             <Button
                 android:id="@+id/Eight"
                 style="@style/NumberButton_land"
+                android:tag="8"
                 android:text="8" />
 
             <Button
                 android:id="@+id/Nine"
                 style="@style/NumberButton_land"
+                android:tag="9"
                 android:text="9" />
 
         </LinearLayout>
@@ -155,36 +181,43 @@
             <Button
                 android:id="@+id/LeftBracket"
                 style="@style/OperatorButton_land"
-                android:text="(" />
+                android:tag="1 / x"
+                android:text="1 / x" />
 
             <Button
                 android:id="@+id/RightBracket"
                 style="@style/OperatorButton_land"
-                android:text=")" />
+                android:tag="^"
+                android:text="x ^ y" />
 
             <Button
                 android:id="@+id/percent"
                 style="@style/OperatorButton_land"
+                android:tag="%"
                 android:text="@string/percentIcon" />
 
             <Button
                 android:id="@+id/Multiply"
                 style="@style/OperatorButton_land"
+                android:tag="X"
                 android:text="X" />
 
             <Button
                 android:id="@+id/Four"
                 style="@style/NumberButton_land"
+                android:tag="4"
                 android:text="4" />
 
             <Button
                 android:id="@+id/Five"
                 style="@style/NumberButton_land"
+                android:tag="5"
                 android:text="5" />
 
             <Button
                 android:id="@+id/Six"
                 style="@style/NumberButton_land"
+                android:tag="6"
                 android:text="6" />
 
 
@@ -202,35 +235,44 @@
             <Button
                 android:id="@+id/square"
                 style="@style/OperatorButton_land"
-                android:text= "x\u00B2" />
+                android:tag="^2"
+                android:text="x\u00B2" />
+
             <Button
                 android:id="@+id/cube"
                 style="@style/OperatorButton_land"
+                android:tag="^3"
                 android:text="x\u00B3" />
+
             <Button
                 android:id="@+id/Factorial"
                 style="@style/OperatorButton_land"
                 android:fontFamily="sans-serif-black"
+                android:tag="!"
                 android:text="X !" />
 
             <Button
                 android:id="@+id/Minus"
                 style="@style/OperatorButton_land"
+                android:tag="-"
                 android:text="-" />
 
             <Button
                 android:id="@+id/One"
                 style="@style/NumberButton_land"
+                android:tag="1"
                 android:text="1" />
 
             <Button
                 android:id="@+id/Two"
                 style="@style/NumberButton_land"
+                android:tag="2"
                 android:text="2" />
 
             <Button
                 android:id="@+id/Three"
                 style="@style/NumberButton_land"
+                android:tag="3"
                 android:text="3" />
 
         </LinearLayout>
@@ -248,34 +290,43 @@
             <Button
                 android:id="@+id/squareRoot"
                 style="@style/OperatorButton_land"
+                android:tag="@string/SquareRootIcon"
                 android:text="@string/SquareRootIcon" />
+
             <Button
                 android:id="@+id/cubeRoot"
                 style="@style/OperatorButton_land"
+                android:tag="@string/CubeRootIcon"
                 android:text="@string/CubeRootIcon" />
+
             <Button
                 android:id="@+id/pi"
                 style="@style/OperatorButton_land"
+                android:tag="3.14"
                 android:text="@string/piIcon" />
 
             <Button
                 android:id="@+id/Plus"
                 style="@style/OperatorButton_land"
+                android:tag="+"
                 android:text="+" />
 
             <Button
                 android:id="@+id/decimal"
                 style="@style/OperatorButton_land"
+                android:tag="."
                 android:text="." />
 
             <Button
                 android:id="@+id/Zero"
                 style="@style/NumberButton_land"
+                android:tag="0"
                 android:text="0" />
 
             <Button
                 android:id="@+id/EqualsTo"
                 style="@style/EqualsToButton_land"
+                android:tag="Equals"
                 android:text="=" />
         </LinearLayout>
     </LinearLayout>

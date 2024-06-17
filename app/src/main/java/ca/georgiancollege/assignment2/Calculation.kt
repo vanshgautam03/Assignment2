@@ -223,7 +223,7 @@ class Calculation (databinding: ActivityMainBinding){
                     }
                 }
             }
-            "@string/SquareRootIcon"->{
+            "SquareRootIcon"->{
                 if (resultTextView.text.toString().contains(".")){
                     if (calculationsTextView.text.toString() == "0") {
                         resultTextView.text =squareRoot(resultTextView.text.toString().toDouble()).toString()
@@ -240,7 +240,7 @@ class Calculation (databinding: ActivityMainBinding){
                     }
                 }
             }
-            "@string/CubeRootIcon"->{
+            "CubeRootIcon"->{
                 if (resultTextView.text.toString().contains(".")){
                     if (calculationsTextView.text.toString() == "0") {
                         resultTextView.text =cubeRoot(resultTextView.text.toString().toDouble()).toString()

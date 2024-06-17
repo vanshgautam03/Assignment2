@@ -290,13 +290,13 @@
             <Button
                 android:id="@+id/squareRoot"
                 style="@style/OperatorButton_land"
-                android:tag="@string/SquareRootIcon"
+                android:tag="SquareRootIcon"
                 android:text="@string/SquareRootIcon" />
 
             <Button
                 android:id="@+id/cubeRoot"
                 style="@style/OperatorButton_land"
-                android:tag="@string/CubeRootIcon"
+                android:tag="CubeRootIcon"
                 android:text="@string/CubeRootIcon" />
 
             <Button
